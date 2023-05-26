@@ -1,12 +1,17 @@
 <script setup lang="ts">
-
-/*
-import FooterPage from "../src/components/FooterPage.vue"
-*/
-
+import { RouterView } from 'vue-router'
+import Header from '@/components/HeaderPage.vue'
+import Footer from '@/components/FooterPage.vue'
 </script>
 
 <template>
-  <main>Le contenu principal</main>
-  <FooterPage/>
+
+  <Header />
+
+   <main>
+    <RouterView />
+  </main>
+
+  <Footer />
 </template>
+
