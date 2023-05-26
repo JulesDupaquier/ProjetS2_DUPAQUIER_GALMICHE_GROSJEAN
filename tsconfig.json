@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+      "types": ["vite/client", "vite-plugin-pages/client"]
   },
 
   "references": [

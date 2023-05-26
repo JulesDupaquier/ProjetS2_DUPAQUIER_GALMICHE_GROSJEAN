@@ -23,15 +23,19 @@ module.exports = {
   'Greyscale/100': '#000000'
  },
  fontSize: {
-  'sm': '0.875rem',
-  'base': '1rem',
-  'lg': '1.25rem',
-  'xl': '1.5625rem',
+
+  'xxs': '0.9rem',
+  'xs': '1rem',
+  'sm': '1.25rem',
+  'xl': '1.563rem',
   '2xl': '2.5rem'
+
  },
- fontFamily: {
-  'helvetica-neue-lt-pro': 'Helvetica Neue LT Pro'
+ fontFamily: 
+ {
+  'helvetica-neue-lt-pro': ['Helvetica Neue LT Pro', 'sans-serif']
  },
+
  borderRadius: {
   'none': '0',
   'xs': '0.1875rem',
@@ -56,6 +60,6 @@ module.exports = {
       }
     }
   },
-  
+
   plugins: []
 }

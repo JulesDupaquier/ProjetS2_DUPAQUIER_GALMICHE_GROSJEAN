@@ -1,15 +1,230 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;,
 
 @layer base {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply font-bold;
+  
+    h1 {
+      @apply text-2xl leading-10 font-bold
     }
+  
+    h2 {
+      @apply text-xl leading-5 font-extrabold
+    } 
+
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Blk.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Ex.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Hv.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-BdCn.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Bd.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-BlkEx.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-BlkCn.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-BdOu.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-BdEx.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-HvCn.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-LtEx.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-HvEx.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-LtCn.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Lt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-MdEx.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-ThCn.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-MdCn.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Th.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-Md.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-ThEx.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-UltLtCn.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-UltLtEx.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('HelveticaNeueLTPro-UltLt.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+}
+
+@layer components { 
+  .sm-l4-bold {
+    @apply font text-sm leading-4 font-bold
+  }
+
+  .sm-l4-medium {
+    @apply font text-sm leading-4 font-medium
+  }
+
+  .sm-l4-roman {
+    @apply font text-sm leading-4 font-roman
+  }
+
+  .xs-l4-roman {
+    @apply font text-xs leading-4 font-roman
+  }
+
+  .xxs-l4-roman{
+    @apply font text-xxs leading-4 font-roman
+  }
 }

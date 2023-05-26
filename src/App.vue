@@ -14,4 +14,3 @@ import Footer from '@/components/FooterPage.vue'
 
   <Footer />
 </template>
-
