@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-arimo text-2xl leading-10 font-bold;
+  }
+
+  h2 {
+    @apply font-arimo text-xl leading-5 font-extrabold;
+  }
+}
