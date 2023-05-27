@@ -22,21 +22,21 @@ module.exports = {
   'Greyscale/90': '#3d3d3d',
   'Greyscale/100': '#000000'
  },
- fontSize: {
 
+ fontSize: {
   'xxs': '0.9rem',
   'xs': '1rem',
   'sm': '1.25rem',
   'xl': '1.563rem',
   '2xl': '2.5rem'
-
- },
- fontFamily: 
- {
-  'helvetica-neue-lt-pro': ['Helvetica Neue LT Pro', 'sans-serif']
+  
  },
 
- borderRadius: {
+  fontFamily: {
+    sans: ['Arimo', 'sans-serif']
+  },
+
+borderRadius: {
   'none': '0',
   'xs': '0.1875rem',
   'sm': '0.25rem',
@@ -52,6 +52,11 @@ module.exports = {
   'full': '9999px'
  },
     extend: {
+
+      gridTemplateColumns: {
+        principal: 'repeat(12, minmax(0, 64px))'
+      },
+      
       spacing: {
 
       },
