@@ -1,4 +1,4 @@
-<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<template><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_dd_181_2708)">
 <circle cx="18.5" cy="14.5" r="13.5" fill="#EBEBEB"/>
 </g>
@@ -23,4 +23,4 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_181_2708" result="shape"/>
 </filter>
 </defs>
-</svg>
+</svg></template>
