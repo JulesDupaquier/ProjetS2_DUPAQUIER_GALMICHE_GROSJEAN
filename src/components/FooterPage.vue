@@ -3,6 +3,7 @@ import IconInsta from '@/components/icons/icon_insta.vue'
 import IconTwitter from '@/components/icons/icon_twitter.vue'
 import IconFacebook from '@/components/icons/icon_facebook.vue'
 import Logo_Proximi from '@/components/icons/icon_logo_proximi_food_xl.vue'
+import Logo_Proximi_header from '@/components/icons/icon_logo_proximi_food_xxs.vue'
 import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
 
 </script>
@@ -49,7 +50,7 @@ import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
           </div>
         </div>
           <div class="flex justify-between">
-            <Logo_Proximi />
+            <Logo_Proximi_header/>
             <icon_logo_mmi />
           </div>
     
