@@ -25,14 +25,14 @@ export async function allUsersAndRecettes() {
     return records
 }
 
-// Montre la liste des Recettes d'un artiste donné
+// // Montre la liste des Recettes d'un artiste donné
 
-export async function allRecettesByUser(Nom: string) {
-    const record = await pb
-      .collection('users')
-      .getFirstListItem(Nom ='${Nom}', { expand: 'recette(users)' })
-    return record
-}
+// export async function allRecettesByUser() {
+//     const record = await pb
+//       .collection('users')
+//       .getFirstListItem(Nom ='${Nom}', { expand: 'recette(users)' })
+//     return record
+// }
 
 // Avoir une seule Recette par son ID
 
@@ -51,6 +51,6 @@ export async function oneUser(id: string) {
 // Avoir le titre de la Recette par son ID
 
 export async function getTitreRecetteById(id: string) {
-    const record = await pb.collection('recette').getOne(id, { fields: 'titre' })
+    const record = await pb.collection('recette').getOne(id, { fields: 'nom_recette' })
     return record
-  }
+}

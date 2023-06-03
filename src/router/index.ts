@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../pages/index.vue';
 import MapView from '../pages/map.vue';
 import LoginView from '../pages/LoginView.vue';
+//@ts-ignore
 import { usePocketBase } from "../composables/usePockeBase";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

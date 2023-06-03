@@ -22,6 +22,26 @@ const urlImg = pb.files.getUrl(props, img0)
 
 {{ tag }}
 
+{{ preparation_time }}
+
+{{ prix }}
+
+{{ personnes }}
+
+<div>
+    <h2>Ingrédients</h2>
+    <p>{{ ingredients }}</p>
+</div>
+
+<div>
+    <h2>Matériel</h2>
+    <p>{{ materiel }}</p>
+</div>
+
+<div>
+    <h2>Recette</h2>
+    <p>{{ recette }}</p>
+</div>
 
 </body>
 
