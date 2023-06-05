@@ -36,7 +36,6 @@ export type RecetteRecord = {
 	auteur?: RecordIdString
 	photo?: string
 	tag?: string
-	favori?: boolean
 	preparation_time?: number
 	prix?: number
 	personnes?: number

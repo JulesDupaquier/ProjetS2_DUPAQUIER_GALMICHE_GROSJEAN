@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase'
-import type { UsersResponse, RecetteResponse } from './pocketbase-types'
+import type { UsersResponse, RecetteResponse } from './pocketbase-type'
 export const pb = new PocketBase('http://193.168.146.141')
 
 // Avoir la liste de toutes les Recettes
@@ -25,14 +25,14 @@ export async function allUsersAndRecettes() {
     return records
 }
 
-// // Montre la liste des Recettes d'un artiste donné
+// Montre la liste des Recettes d'un Utilisateur donné
 
-// export async function allRecettesByUser() {
-//     const record = await pb
-//       .collection('users')
-//       .getFirstListItem(Nom ='${Nom}', { expand: 'recette(users)' })
-//     return record
-// }
+export async function allRecettesByUser() {
+    const record = await pb
+      .collection('users')
+      .getFirstListItem(Nom ='${Nom}', { expand: 'recette(users)' })
+    return record
+}
 
 // Avoir une seule Recette par son ID
 

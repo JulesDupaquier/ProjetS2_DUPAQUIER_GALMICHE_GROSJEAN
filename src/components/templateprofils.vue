@@ -1,35 +1,42 @@
   <script setup lang="ts">
-  import { pb } from './backend'
-  import type { ArtisteResponse } from '@/pocketbase-types'
-  const props: ArtisteResponse = defineProps<ArtisteResponse>()
+import { pb } from '@/backend'
+import PocketBase from 'pocketbase'
+import { allRecettesByUser } from '@/backend'
+import { allUsers } from '@/backend'
 
-  const img1= props.PhotoArtiste
+import type { UsersResponse } from '@/pocketbase-type'
+const props: UsersResponse = defineProps<UsersResponse>()
+
+import type { RecetteResponse } from '@/pocketbase-type'
+// const allrecette =  : RecetteResponse = defineProps<RecetteResponse>()
+const recette = await allRecettesByUser();
+
+import type { AuthSystemFields } from '@/pocketbase-type'
+// const  AuthSystemFields = defineProps<AuthSystemFields>()
+const AuthSystemFields = await allUsers
+
+
+
+  const img1= props.avatar
   const urlImg1 = pb.files.getUrl(props, img1, {thumb : 'LxH'})
+  const img2= props.avatar
+  const urlImg2 = pb.files.getUrl(recette, img2, {thumb : 'LxH'})
 </script>
 
 <template>
     <div class="flex flex-col items-center">
-      <!-- Photo ronde avec dégradé de couleur -->
+      <img :src="urlImg1" class="w- [500px] h-[400px]">
       <div class="rounded-full w-24 h-24 bg-gradient-to-t from-primary/200 to-transparent"></div>
   
       <!-- Zone de texte nom/prénom -->
       <div class="mt-4">
-        <p class="text-center">Prénom</p>
-        <p class="text-center">Nom</p>
+        <p class="text-center">{{ username }}</p>
+
       </div>
   
-      <!-- Trait séparateur -->
-      <hr class="my-8 w-1/2 border-gray-400">
-  
-      <!-- Chiffres de chaque côté du trait -->
-      <div class="flex justify-between w-1/2">
-        <p>Chiffre 1</p>
-        <p>Chiffre 2</p>
-      </div>  
-  
       <!-- Titre et image de recette -->
-      <h3 class="my-8">Recette enregistrée</h3>
-      <img src="path/vers/image.png" alt="Recette" class="w-full">
+      <h3 class="my-8">{{ recette.users }}</h3>
+      <img :src="urlImg2" class="w- [500px] h-[400px]">
     </div>
   </template>
   
