@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
 import Logo_Proximi_header from '@/components/icons/icon_logo_proximi_food_xxs.vue'
-import BG_path from '@/components/icons/path_bg_header.vue'
+import XS_HEADER from '@/components/icons/path_bg_header.vue'
+import XL_HEADER from '@/components/icons/xl_header.vue'
 const activeMenu = ref(false)
 function closeMenu() {
 	  activeMenu.value = false
@@ -10,8 +11,11 @@ function closeMenu() {
 
 <template>		
 <header class="">
-    <BG_path class="relative min-w-fit"/>
+    <XS_HEADER class="relative hidden sm:block"/>
+	<XL_HEADER class="relative hidden lg:block"/>
   	<Logo_Proximi_header class="absolute top-8 left-5"/>
+
+	
 	<div class="absolute top-10 right-5">
 		
 		<button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden" @click="activeMenu = !activeMenu">
@@ -23,12 +27,13 @@ function closeMenu() {
 
 	<div class="invisible opacity-0 lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-bold lg:uppercase lg:tracking-wide lg:text-black lg:opacity-100" :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
     
-		<div class="flex items-center gap-4 lg:flex-row-reverse">
+		<div class="flex items-center gap-4 lg:flex-row-reverse lg:hidden">
 		<nav class="fixed inset-0 h-screen w-screen bg-secondary/100 text-2xl text-white transition-all duration-300 ease-in-out lg:py-0">
 			<ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
 				<li class="menu-item"><RouterLink class="menu-link" to="/map" @click="closeMenu">Map</RouterLink></li>
 				<li class="menu-item"><RouterLink class="menu-link" to="/tendances" @click="closeMenu">Tendances</RouterLink></li>
 				<li class="menu-item"><RouterLink class="menu-link" to="/profil" @click="closeMenu">Compte</RouterLink></li>
+				<li class="menu-item"><RouterLink class="menu-link" to="/LoginView" @click="closeMenu">login</RouterLink></li>
 			</ul>
 		</nav>
 	</div>

@@ -53,6 +53,14 @@ borderRadius: {
   '7xl': '4.670040130615234rem',
   'full': '9999px'
  },
+ 
+ extend: {
+  gridTemplateColumns: {
+    principal: 'repeat(12, minmax(0, 64px))',
+    secondary: 'repeat(auto-fit, minmax(0, 1fr))'
+  }
+}
+
 },
 
   plugins: []
