@@ -1,6 +1,6 @@
 import PocketBase from 'pocketbase'
 import type { UsersResponse, RecetteResponse } from './pocketbase-types'
-export const pb = new PocketBase('http://193.168.146.141')
+export const pb = new PocketBase('http://127.0.0.1:8090')
 
 // Avoir la liste de toutes les Recettes
 
