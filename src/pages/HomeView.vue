@@ -7,7 +7,7 @@
         <img src="/public/img/img_plat_presentation.png" alt="">
     </div>
  
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 mt-48">
   <h1 class="text-2xl md:text-4xl ">Bievenue sur Proximi <span class="text-yellow-500">Food</span></h1>
 </div>
 <div class="flex justify-center px-14 pt-12 md:pt-7">

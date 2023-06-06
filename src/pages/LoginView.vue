@@ -66,14 +66,13 @@ const CreateAccount = async () => {
 </style>
 
 <template>
-    <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+    <div class="flex min-h-full items-center pt-40 justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div class="w-full max-w-md space-y-8">
         <div v-if="currentUser">
           <h1>Bienvenue {{ currentUser?.name }}</h1>
           <div>
             <button type="button" @click="Logout"
               class="rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Déconnexion</button>
-  
           </div>
         </div>
         <div v-else>

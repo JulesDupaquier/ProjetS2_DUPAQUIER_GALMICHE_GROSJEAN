@@ -10,7 +10,7 @@ function closeMenu() {
 
 <template>
   <header class="fixed top-0 z-10 flex w-full translate-y-0 items-stretch justify-between bg-secondary-100 px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
-    <div class="pt-6">
+    <div class="">
       <a href="/">
         <Logo_Proximi_header/>
       </a>

@@ -4,7 +4,7 @@ import templatemap from "../components/templatemap.vue";
 </script>
 
 <template>
-    <div class="">
+    <div class="pt-28">
         <templatemap/>
     </div>
 </template>

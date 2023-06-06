@@ -16,10 +16,9 @@ import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
         <h4 class="font-bold text-xl lg:order-2">Navigation</h4>
         <nav>
           <ul class="text-xl">
-            <li><RouterLink to="/connexion">Home</RouterLink></li>
-            <li><RouterLink to="/connexion">À propos</RouterLink></li>
-            <li><RouterLink to="/connexion">Services</RouterLink></li>
-            <li><RouterLink to="/connexion">Contact</RouterLink></li>
+            <li><RouterLink to="/tendances">Home</RouterLink></li>
+            <li><RouterLink to="/apropos">À propos</RouterLink></li>
+            <li><RouterLink to="/LoginView">Services</RouterLink></li>
           </ul>
         </nav>
       </div>
@@ -27,9 +26,8 @@ import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
           <h4 class="font-bold text-xl">Services</h4>
           <nav>
             <ul class="text-xl">
-              <li>Recettes</li>
-              <li>Map intéractive</li>
-              <li>Profils</li>
+              <li><RouterLink to="/tendances">Recettes</RouterLink></li>
+              <li><RouterLink to="/map">Map intéractive</RouterLink></li>
             </ul>
           </nav>
         </div>
@@ -37,9 +35,9 @@ import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
             <h4 class="font-bold text-xl">Accessibilité</h4>
             <nav>
               <ul class="text-xl">
-                <li>Mentions légales</li>
-                <li>CGV</li>
-                <li>Cookies</li>
+                <li><RouterLink to="/mentions">Mentions légales</RouterLink></li>
+                <li><RouterLink to="/cgv">CGV</RouterLink></li>
+                <li><RouterLink to="/cookies">Cookies</RouterLink></li>
               </ul>
             </nav>
           </div>
