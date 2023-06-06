@@ -9,7 +9,7 @@ import icon_logo_mmi from '@/components/icons/icon_logo_mmi.vue'
 </script>
 
 <template>
-<footer class="bg-secondary-100">
+<footer class="bg-secondary-100 pt-32">
   <Logo_Proximi class="max-lg:m-auto py-5" />
     <div class="max-lg:block text-white text-center lg:flex lg:justify-between lg:mx-28 lg:col-span-4">
       <div class="my-10">
