@@ -1,13 +1,21 @@
 <script setup lang="ts">
-import templateprofils from "../components/templateprofils.vue";
-import templatetendance from "../components/templatetendance.vue";
-import templaterecette from "../components/templaterecette.vue";
+import { pb } from '@/backend'
+import { allRecettes } from "@/backend";
+import Templatetendance from '@/components/templatetendance.vue';
+const recetteOne = await allRecettes()
 </script>
 
 <template>
-    <div class="">
-        <templaterecette/>
-        <templateprofils/>
-        <templatetendance/>
-    </div>
+     <ul>
+      <li v-for="recette of recetteOne" v-bind="{...recette}" :v-key="recette.id">
+        <RouterLink 
+          :to="{
+            name: 'recette-id',
+            params: { id: recette.id }
+          }"
+        >
+          <Templatetendance v-bind="{ ...recette }" />
+        </RouterLink>
+      </li>
+    </ul>
 </template>

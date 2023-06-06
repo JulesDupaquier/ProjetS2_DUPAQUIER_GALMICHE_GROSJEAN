@@ -3,8 +3,10 @@ import { pb } from '@/backend'
 import type { RecetteResponse } from '@/pocketbase-types'
 const props: RecetteResponse = defineProps<RecetteResponse>()
 
+
 const img1= props.photo
 const urlImg1 = pb.files.getUrl(props, img1, {thumb : 'LxH'})
+
 </script>
 
 <template>
@@ -12,13 +14,12 @@ const urlImg1 = pb.files.getUrl(props, img1, {thumb : 'LxH'})
     <h1 class="text-center text-4xl font-bold mt-8">{{ nom_recette }}</h1>
 
     <div class="flex items-center mt-8">
-      <h3 class="text-yellow-500 text-2xl font-bold">Nom d'utilisateur</h3>
-      <img src="chemin/vers/votre/image.jpg" alt="Photo utilisateur" class="w-12 h-12 rounded-full ml-4">
+      <h3 class="text-yellow-500 text-2xl font-bold">{{ auteur }}</h3>
+      <img :src="urlImg1" alt="Photo utilisateur" class="w-12 h-12 rounded-full ml-4">
     </div>
 
     <img src="chemin/vers/votre/image-longue.jpg" alt="Image de la recette" class="mt-8">
-
-    <div class="flex justify-center mt-8">
+        <div class="flex justify-center mt-8">
       <div class="flex items-center border rounded-full bg-white py-2 px-4">
         <div class="rounded-full bg-black w-8 h-8 flex items-center justify-center">
           <span class="text-white">{{ tag }}</span>

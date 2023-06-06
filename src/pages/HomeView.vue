@@ -6,7 +6,7 @@
     <div class="absolute right-0 w-32 md:w-60">
         <img src="/public/img/img_plat_presentation.png" alt="">
     </div>
-    <div class="bg-yellow-500 w-full h-10" ></div>
+ 
     <div class="grid grid-cols-2">
   <h1 class="text-2xl md:text-4xl ">Bievenue sur Proximi <span class="text-yellow-500">Food</span></h1>
 </div>
@@ -24,7 +24,7 @@
 </div>
 
 <div class="flex justify-center gap-20 pt-10 pb-10">
-    <RouterLink to="/login"><button class="rounded-full bg-yellow-500 text-white py-2 px-4 md:px-60">Inscription</button></RouterLink>
-    <RouterLink to="/login"><button class="rounded-full border border-black text-black py-2 px-4 md:px-60">Connexion</button></RouterLink>
+    <RouterLink to="/loginview"><button class="rounded-full bg-yellow-500 text-white py-2 px-4 md:px-60">Inscription</button></RouterLink>
+    <RouterLink to="/loginview"><button class="rounded-full border border-black text-black py-2 px-4 md:px-60">Connexion</button></RouterLink>
   </div>
 </template>
