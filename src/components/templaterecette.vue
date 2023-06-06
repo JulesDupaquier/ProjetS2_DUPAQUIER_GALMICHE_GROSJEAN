@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
-import type { RecetteResponse } from '@/pocketbase-type'
+import type { RecetteResponse } from '@/pocketbase-types'
 const props: RecetteResponse = defineProps<RecetteResponse>()
 
 const img1= props.photo
@@ -62,6 +62,4 @@ const urlImg1 = pb.files.getUrl(props, img1, {thumb : 'LxH'})
       </ol>
     </div>
   </div>
-</template>
-
 </template>

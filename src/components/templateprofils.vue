@@ -4,14 +4,14 @@ import PocketBase from 'pocketbase'
 import { allRecettesByUser } from '@/backend'
 import { allUsers } from '@/backend'
 
-import type { UsersResponse } from '@/pocketbase-type'
+import type { UsersResponse } from '@/pocketbase-types'
 const props: UsersResponse = defineProps<UsersResponse>()
 
-import type { RecetteResponse } from '@/pocketbase-type'
+import type { RecetteResponse } from '@/pocketbase-types'
 // const allrecette =  : RecetteResponse = defineProps<RecetteResponse>()
 const recette = await allRecettesByUser();
 
-import type { AuthSystemFields } from '@/pocketbase-type'
+import type { AuthSystemFields } from '@/pocketbase-types'
 // const  AuthSystemFields = defineProps<AuthSystemFields>()
 const AuthSystemFields = await allUsers
 

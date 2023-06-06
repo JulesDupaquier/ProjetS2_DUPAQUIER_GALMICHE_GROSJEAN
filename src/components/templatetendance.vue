@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import icon_arrow from '@/components/icons/icon_arrow.vue';
 import { pb } from '@/backend'
-import type { RecetteResponse } from '@/pocketbase-type'
+import type { RecetteResponse } from '@/pocketbase-types'
 const props: RecetteResponse = defineProps<RecetteResponse>()
 
 const img1= props.photo
@@ -20,11 +20,8 @@ const urlImg1 = pb.files.getUrl(props, img1, {thumb : 'LxH'})
     <div>
 
     <div class="relative flex justify-end z-20">
-    <div  class="w-[62px] h-[46.83px] rounded-tl-[20px] bg-primary-400 lg:w-[62px] lg:h-[46.83px]"></div>
-    </div>
-<p>test ?</p>
-    <div class="relative flex justify-end z-30"><icon_arrow/></div>
-    
+    <div  class=" w-[62px] h-[46.83px] rounded-tl-[20px] bg-primary-400 lg:w-[62px] lg:h-[46.83px]">
+        <icon_arrow/></div></div>    
     </div>
     </div>
 </div>

@@ -28,7 +28,6 @@ coverage
 *.sw?
 
 #Pocketbase
-
 /pocketbase/pb_data
 /pocketbase/pb_data.zip
 /pocketbase/pocketbase
